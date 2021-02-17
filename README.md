@@ -3,9 +3,9 @@
 # Installation
 
 * Install this repository to your device.
-* Open it in any Text Editor and run **`npm i`** in the console (for download all packages). You can find a list of all packages in the [package.json](https://github.com/VladislavDesu/koroka-solutions-test/blob/master/package.json) file.
-* You can build a project by running **`npm run build`** .
-* You can also run **`npm run start`** , then the project will also build, but also start a local server ([Browsersync](https://browsersync.io/)), for comfortable project review or development.
+* Open it in any Text Editor and run **`npm i`** in your console (for download all packages). You can find a list of all packages in the [package.json](https://github.com/VladislavDesu/koroka-solutions-test/blob/master/package.json) file.
+* You can build project by running **`npm run build`** code.
+* You can also run **`npm run start`** code, then project will also build, but also start a local server ([Browsersync](https://browsersync.io/)), for comfortable project review or development.
 
 # Technoligies
 
@@ -48,9 +48,9 @@ The project consists of two main folders [src](https://github.com/VladislavDesu/
 
 I used [Gulp](https://gulpjs.com/) to Develop and Build this project. All gulp's tasks you can find in the [gulpfile.js](https://github.com/VladislavDesu/koroka-solutions-test/blob/master/gulpfile.js) file.
 
-All styles were created by **`SCSS`** , you can find all source styles in [src/styles](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/src/styles) , **`Gulp`** converted all **`SCSS`** into one build and minify **`CSS`** file ([build/css](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/build/css)).
+All styles were created by **`SCSS`** code, you can find all source styles in [src/styles](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/src/styles) folder, **`Gulp`** converted all **`SCSS`** files into one build and minify **`CSS`** file ([build/css](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/build/css)).
 
-All images amd icons minify by **`Gulp`** , you can find all source images and icons in [src](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/src) , **`Gulp`** minify all images and icons and created images with webp format ([build](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/build)).
+All images and icons minify by **`Gulp`** task, you can find all images and icons in [src](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/src) folder, **`Gulp`** minify all images and icons and created images with webp format ([build](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/build)).
 
 All fonts you can find in [src/fonts](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/src/fonts) , **`Gulp`** converted all fonts from ttf format to woff2 & woff formats ([build/fonts](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/build/fonts)).
 
@@ -58,4 +58,4 @@ All other files **`Gulp`** copy form [src](https://github.com/VladislavDesu/koro
 
 ## Package.json
 
-Information about this project and list of all packages you can find in the - [package.json](https://github.com/VladislavDesu/koroka-solutions-test/blob/master/package.json) file.
+This file contains of information about project and list of all packages [package.json](https://github.com/VladislavDesu/koroka-solutions-test/blob/master/package.json).
