@@ -54,7 +54,7 @@ All images amd icons minify by **`Gulp`** , you can find all source images and i
 
 All fonts you can find in [src/fonts](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/src/fonts) , **`Gulp`** converted all fonts from ttf format to woff2 & woff formats ([build/fonts](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/build/fonts)).
 
-All other files **`Gulp`** copy form [src](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/src) folder to [src](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/build) folder.
+All other files **`Gulp`** copy form [src](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/src) folder to [build](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/build) folder.
 
 ## Package.json
 
