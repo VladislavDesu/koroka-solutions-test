@@ -48,7 +48,7 @@ The project consists of two main folders [src](https://github.com/VladislavDesu/
 
 I used [Gulp](https://gulpjs.com/) to Develop and Build this project. All gulp's tasks you can find in the [gulpfile.js](https://github.com/VladislavDesu/koroka-solutions-test/blob/master/gulpfile.js) file.
 
-All styles were created by **`SCSS`** , you can find all source styles in [src/styles](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/src/styles) , **`Gulp`** build all this files into one build and minify **`CSS`** code ([build/css](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/build/css)).
+All styles were created by **`SCSS`** , you can find all source styles in [src/styles](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/src/styles) , **`Gulp`** converted all **`SCSS`** into one build and minify **`CSS`** file ([build/css](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/build/css)).
 
 All images amd icons minify by **`Gulp`** , you can find all source images and icons in [src](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/src) , **`Gulp`** minify all images and icons and created images with webp format ([build](https://github.com/VladislavDesu/koroka-solutions-test/tree/master/build)).
 
