@@ -1,0 +1,222 @@
+.form {
+   &__label {
+      position: relative;
+      width: 100%;
+      margin-bottom: 20px;
+
+      & span {
+         position: absolute;
+         top: 16px;
+         left: 16px;
+         font-family: "Roboto", "Arial", sans-serif;
+         font-weight: 400;
+         font-style: normal;
+         font-size: 16px;
+         line-height: 24px;
+         color: $colorGray;
+
+         &:focus {
+            font-size: 13px;
+            line-height: 20px;
+         }
+      }
+   }
+
+   &__input {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      line-height: 24px;
+      color: $colorBlack;
+      background-color: $colorWhite;
+      box-shadow: $shadowDefault;
+
+      &:hover {
+         box-shadow: $shadowHover;
+      }
+
+      &:focus {
+         @include registration-input;
+         outline: none;
+         box-shadow: $shadowActive;
+      }
+
+      &:read-only {
+         box-shadow: $shadowDefault;
+      }
+
+      &:not(:placeholder-shown) {
+         @include registration-input;
+      }
+
+      &--valid,
+      &--valid:focus,
+      &--autofill {
+         background-color: #cbecd9;
+         background-image: url("../icons/input-valid.svg");
+         background-repeat: no-repeat;
+         background-position: 96% center;
+         box-shadow: $shadowSuccess;
+      }
+
+      &--autofill {
+         background-color: #fff5c0;
+         box-shadow: $shadowDefault;
+      }
+
+      &--invalid {
+         margin-bottom: 15px;
+         background-color: $colorRedGirl;
+         box-shadow: $shadowError;
+      }
+
+      &--invalid ~ .form__error {
+         display: block;
+         bottom: -15px;
+         max-height: 100%;
+      }
+
+      &:invalid:not(:focus):not(:placeholder-shown),
+      &:invalid:focus:not(:placeholder-shown) {
+         background-color: $colorRedGirl;
+         box-shadow: $shadowError;
+      }
+
+      &:invalid:focus:not(:placeholder-shown) ~ .form__error,
+      &:invalid:not(:focus):not(:placeholder-shown) ~ .form__error {
+         max-height: 100%;
+      }
+
+      &:disabled {
+         color: $colorBlack;
+         opacity: 0.24;
+
+         & + span {
+            opacity: 0.24;
+         }
+
+         &:hover,
+         &:focus {
+            box-shadow: $shadowDefault;
+         }
+      }
+   }
+
+   &__error {
+      position: absolute;
+      display: none;
+      max-height: 0;
+      overflow: hidden;
+      color: $colorRed;
+   }
+
+   &__checkbox {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 0;
+      cursor: pointer;
+
+      & input {
+         @include hidden;
+      }
+   }
+
+   &__checkbox-indicator {
+      position: relative;
+      margin-right: 12px;
+      font-size: 0;
+
+      &:hover::before {
+         background-color: $colorGrayM;
+      }
+
+      &:active::before {
+         background-color: $colorGrayL;
+      }
+
+      &::after {
+         content: "";
+         position: absolute;
+         display: none;
+         top: 50%;
+         left: 50%;
+         width: 12px;
+         height: 10px;
+         background-image: url("../icons/registration-check.svg");
+         background-repeat: no-repeat;
+         transform: translate(-50%, -50%);
+      }
+
+      &::before {
+         content: "";
+         display: block;
+         width: 24px;
+         height: 24px;
+         border: 1px solid $colorGrayS;
+         border-radius: 4px;
+         background-color: $colorWhite;
+      }
+
+      &--error::before {
+         background-color: $colorRedGirl;
+      }
+
+   }
+
+   &__privacy-link {
+      color: $colorPrimary;
+
+      &:hover,
+      &:focus {
+         color: $colorHover;
+         outline: none;
+         text-decoration: none;
+      }
+
+      &:active {
+         color: $colorActive;
+      }
+   }
+
+   &__submit {
+      height: 44px;
+      margin-top: 32px;
+      padding: 0;
+      border: none;
+      border-radius: 4px;
+      color: $colorWhite;
+      background-color: $colorPrimary;
+
+      &:hover {
+         background-color: $colorHover;
+      }
+
+      &:active {
+         background-color: $colorActive;
+         border: none;
+      }
+
+      &:focus {
+         border: 2px solid $colorActive;
+         outline: none;
+      }
+
+      &:disabled {
+         background-color: $colorDisabled;
+      }
+   }
+
+   &__sign {
+      height: 44px;
+      margin-top: 8px;
+      padding: 0;
+      border: none;
+      border-radius: 4px;
+      color: $colorPrimary;
+      background-color: $colorWhite;
+
+      @include flat-label;
+   }
+}

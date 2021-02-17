@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Main Content</title>
+   <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+   <header class="header">
+      <div class="header__inner">
+         <a class="header__logo" href="index.html">
+            <include src="build/icons/Logotype.svg"></include>
+         </a>
+
+         <nav class="header__nav">
+            <a class="p2 header__link" href="#">Free test</a>
+            <a class="p2 header__link header__link--active" href="#">Catalog</a>
+            <a class="p2 header__link" href="#">Help</a>
+         </nav>
+
+         <a href="#" class="header__user">
+            <span class="header__user-name">Michael Browk</span>
+            <include src="build/icons/user-icon.svg"></include>
+         </a>
+      </div>
+   </header>
+
+   <main class="main-content">
+      <section class="catalog">
+         <div class="catalog__inner">
+            <h3 class="catalog__title">Course catalog</h3>
+            <p class="p2 catalog__text">Each course contains video lectures, tasks, and text materials. All courses
+               viewed by you are displayed in your personal account</p>
+
+            <form class="catalog__form">
+               <label class="catalog__label catalog__label-search" for="catalog-search">
+                  <span class="catalog__text-hide">Search</span>
+                  <input type="search" id="catalog-search" placeholder="Search">
+                  <span class="catalog__search-icon">
+                     <include src="build/icons/search.svg"></include>
+                  </span>
+                  <span class="catalog__search-list">
+                     <span class="catalog__search-item">Ukraine</span>
+                     <span class="catalog__search-item">USA</span>
+                     <span class="catalog__search-item">Russia</span>
+                     <span class="catalog__search-item">Japan</span>
+                     <span class="catalog__search-item">Europe</span>
+                  </span>
+               </label>
+
+               <label class="catalog__label catalog__label-dropbox" for="catalog-dropbox">
+                  <input type="search" id="catalog-dropbox" placeholder="&nbsp;">
+                  <span class="catalog__country">Your country</span>
+                  <span class="catalog__dropbox-list">
+                     <span class="catalog__dropbox-item">Ukraine</span>
+                     <span class="catalog__dropbox-item">USA</span>
+                     <span class="catalog__dropbox-item">Russia</span>
+                     <span class="catalog__dropbox-item">Japan</span>
+                     <span class="catalog__dropbox-item">Europe</span>
+                  </span>
+               </label>
+
+
+            </form>
+
+            <ul class="catalog__list">
+               <li class="catalog__island island">
+                  <div class="island__top">
+                     <div class="island__progress">
+                        <span class="p3">Progress 12%</span>
+                     </div>
+
+                     <div class="island__teacher">
+                        <picture>
+                           <source srcset="images/avatar-1.webp">
+                           <img class="island__teacher-avatar" src="images/avatar-1.png" width="200" height="200"
+                              alt="Alexa">
+                        </picture>
+
+                        <span class="island__teacher-name">Alexa</span>
+                     </div>
+                  </div>
+
+                  <div class="island__content">
+                     <h6 class="island__title">Take exam in Mathematics at 100 points</h6>
+
+                     <ul class="island__stat">
+                        <li class="island__stat-lessons">12 lessons</li>
+                        <li class="island__stat-tasks">12 tasks</li>
+                        <li class="island__stat-minutes">30 minutes</li>
+                     </ul>
+
+                     <div class="island__btns">
+                        <button class="island__btn island__btn--continue" type="button">Continue</button>
+                        <button class="island__btn island__btn--more" type="button">More</button>
+                     </div>
+                  </div>
+               </li>
+
+               <li class="catalog__island island">
+                  <div class="island__top">
+                     <div class="island__progress">
+                        <span class="p3">Progress 12%</span>
+                     </div>
+
+                     <div class="island__teacher">
+                        <picture>
+                           <source srcset="images/avatar-2.webp">
+                           <img class="island__teacher-avatar" src="images/avatar-2.png" width="200" height="200"
+                              alt="Kathryn Nguyen">
+                        </picture>
+                        <span class="island__teacher-name">Kathryn Nguyen</span>
+                     </div>
+                  </div>
+
+                  <div class="island__content">
+                     <h6 class="island__title">How buy new clothes without money in USA</h6>
+
+                     <ul class="island__stat">
+                        <li class="island__stat-lessons">12 lessons</li>
+                        <li class="island__stat-tasks">12 tasks</li>
+                        <li class="island__stat-minutes">30 minutes</li>
+                     </ul>
+
+                     <div class="island__btns">
+                        <button class="island__btn island__btn--continue" type="button">Continue</button>
+                        <button class="island__btn island__btn--more" type="button">More</button>
+                     </div>
+                  </div>
+               </li>
+
+               <li class="catalog__island island">
+                  <div class="island__top">
+                     <div class="island__progress">
+                        <span class="p3">Progress 12%</span>
+                     </div>
+
+                     <div class="island__teacher">
+                        <picture>
+                           <source srcset="images/avatar-3.webp">
+                           <img class="island__teacher-avatar" src="images/avatar-3.png" width="200" height="200"
+                              alt="Diane Miles">
+                        </picture>
+                        <span class="island__teacher-name">Diane Miles</span>
+                     </div>
+                  </div>
+
+                  <div class="island__content">
+                     <h6 class="island__title">Why people hate me?</h6>
+
+                     <ul class="island__stat">
+                        <li class="island__stat-lessons">12 lessons</li>
+                        <li class="island__stat-tasks">12 tasks</li>
+                        <li class="island__stat-minutes">30 minutes</li>
+                     </ul>
+
+                     <div class="island__btns">
+                        <button class="island__btn island__btn--continue" type="button">Continue</button>
+                        <button class="island__btn island__btn--more" type="button">More</button>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+   </main>
+
+   <script src="scripts/showList.js"></script>
+</body>
+
+</html>

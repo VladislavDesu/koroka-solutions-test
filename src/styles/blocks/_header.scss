@@ -1,0 +1,135 @@
+.header {
+   box-shadow: 0px 1px 0px rgba(17, 17, 17, 0.1);
+   
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1366px;
+      margin: 0 auto;
+      padding: 0 24px;
+      min-height: 77px;
+   }
+
+   &__nav {
+      display: flex;
+      align-items: center;
+      align-self: stretch;
+      margin-left: auto;
+      margin-right: 58px;
+   }
+
+   &__logo {
+
+      & svg {
+         width: 70px;
+      }
+      &:focus {
+         outline: none;
+      }
+   }
+
+   &__link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      align-self: stretch;
+      margin-right: 25px;
+      color: $colorGray;
+
+      &:last-child {
+         margin-right: 0;
+      }
+
+      &::before {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         width: 100%;
+         height: 2px;
+      }
+
+      &:hover,
+      &:focus {
+         color: $colorGrayK;
+         text-decoration: none;
+         outline: none;
+
+         &::before {
+            background-color: $colorGray;
+         }
+      }
+
+      &--active {
+         color: $colorBlack;
+
+         &::before {
+            background-color: $colorPrimary;
+         }
+
+         &:hover,
+         &:focus {
+            color: $colorBlack;
+
+            &::before {
+               background-color: $colorPrimary;
+            }
+         }
+      }
+   }
+
+   &__user {
+      display: flex;
+      align-items: center;
+      color: $colorPrimary;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+         color: $colorHover;
+         outline: none;
+         text-decoration: none;
+      }
+
+      &:active {
+         color: $colorActive;
+      }
+   }
+
+   &__user-name {
+      margin-right: 12px;
+   }
+}
+
+@media (max-width: 768px) {
+   .header {
+      &__inner {
+         padding: 0 10px;
+      }
+
+      &__nav {
+         margin-right: 30px;
+      }
+
+      &__link {
+         margin-right: 10px;
+      }
+   }
+}
+
+@media (max-width: 552px) {
+   .header {
+
+      &__nav {
+         margin-right: 5px;
+      }
+
+      &__link {
+         margin-right: 5px;
+      }
+
+      &__user-name {
+         display: none;
+      }
+   }
+}

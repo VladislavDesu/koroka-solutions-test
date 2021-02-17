@@ -1,0 +1,35 @@
+.socials {
+   &__text {
+      margin: 0;
+   }
+
+   &__list {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+   }
+
+   &__item {
+      & span {
+         @include hidden;
+      }
+
+      &:last-child {
+         margin-right: 0;
+      }
+   }
+
+   &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      margin-right: 8px;
+      border-radius: 50%;
+      background-color: $colorWhite;
+      @include flat-label;
+   }
+}

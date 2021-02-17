@@ -1,0 +1,120 @@
+.registration {
+   position: relative;
+   height: 100vh;
+   background-color: $colorGrayM;
+
+   &__profile {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 474px;
+      background-color: $colorWhite;
+      border-radius: 8px;
+      box-shadow: $shadowDefault;
+      transform: translate(-50%, -50%);
+   }
+
+   &__top {
+      position: relative;
+      padding: 32px;
+      padding-bottom: 0;
+
+      &::before {
+         content: "";
+         position: absolute;
+         bottom: -1px;
+         left: 0;
+         width: 100%;
+         height: 1px;
+         background-color: $colorGrayL;
+      }
+   }
+
+   &__menu {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      margin-top: 15px;
+      list-style: none;
+
+      & li {
+         margin-right: 24px;
+      }
+   }
+
+   &__tab {
+      position: relative;
+      display: block;
+      padding-top: 7px;
+      padding-bottom: 15px;
+      color: $colorGray;
+
+      &::before {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         width: 100%;
+         height: 2px;
+      }
+
+      &:hover,
+      &:focus {
+         color: $colorGrayK;
+         text-decoration: none;
+         outline: none;
+
+         &::before {
+            background-color: $colorGray;
+         }
+      }
+
+      &--active {
+         color: $colorBlack;
+
+         &::before {
+            background-color: $colorPrimary;
+         }
+
+         &:hover,
+         &:focus {
+            color: $colorBlack;
+   
+            &::before {
+               background-color: $colorPrimary;
+            }
+         }
+      }
+   }
+
+   &__socials {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 32px;
+      background-color: $colorGrayM;
+   }
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+      padding: 32px;
+      padding-top: 24px;
+   }
+}
+
+@media (max-width: 562px) {
+   .registration {
+      &__profile {
+         position: static;
+         transform: translate(0, 0);
+         width: 100%;
+      }
+
+      &__top,
+      &__socials,
+      &__form {
+         padding-right: 10px;
+         padding-left: 10px;
+      }
+   }
+}
